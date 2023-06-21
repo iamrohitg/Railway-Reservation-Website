@@ -1,0 +1,937 @@
+ 
+
+
+
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Railway Parcel Website.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700|Oswald:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="parcel/fonts/icomoon/style.css">
+   	
+    <link rel="stylesheet" href="parcel/css/bootstrap.min.css">
+    <link rel="stylesheet" href="parcel/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="parcel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="parcel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="parcel/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="parcel/css/aos.css">
+	<link rel="stylesheet" href="cute-alert/cute-alert.css">
+	<link rel="stylesheet" href="cute-alert/sticky-alert.css">
+	<link rel="stylesheet" href="cute-alert/openextnlink.css">
+	<link rel="stylesheet" href="cute-alert/style_red.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="parcel/css/style.css">
+
+  </head>
+      <script src="js/jquery-3.6.0.min.js"></script>
+	<Script type="text/javascript" src="cute-alert/cute-alert.js"></script>
+	<Script type="text/javascript" src="jscript/common/functions.js"></script>
+	<script type="text/javascript">
+	function showCopyright(){
+		document.getElementById('b').style.visibility="visible";
+		document.getElementById('b').style.display="block";
+		var Modal_Copyright = document.getElementById('Modal_Copyright');
+		Modal_Copyright.style.display = "block";
+	}
+	function showDisclaimer(){
+		document.getElementById('a').style.visibility="visible";
+		document.getElementById('a').style.display="block";
+		var Modal_Disclaimer = document.getElementById('Modal_Disclaimer');
+		Modal_Disclaimer.style.display = "block";
+	}
+	function showPrivacyPolicy(){
+		document.getElementById('d').style.visibility="visible";
+		document.getElementById('d').style.display="block";
+		var Modal_PrivacyPolicy = document.getElementById('Modal_PrivacyPolicy');
+		Modal_PrivacyPolicy.style.display = "block";
+	}
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    var Modal_Disclaimer = document.getElementById('Modal_Disclaimer');
+	    if (event.target == Modal_Disclaimer) {
+	        Modal_Disclaimer.style.display = "none";
+	    }
+	    var Modal_Copyright = document.getElementById('Modal_Copyright');
+	    if (event.target == Modal_Copyright) {
+	    	Modal_Copyright.style.display = "none";
+	    }
+	    var Modal_PrivacyPolicy = document.getElementById('Modal_PrivacyPolicy');
+	    if (event.target == Modal_PrivacyPolicy) {
+	        Modal_PrivacyPolicy.style.display = "none";
+	    }
+	}
+	</script>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                         <a href="#" class=""><span class="d-none d-md-inline-block">28-Oct-2022 17:28</span></a>
+             	        <span class="mx-md-2 d-inline-block"></span>
+                   <span class="mr-2 mainheadlbl d-none d-sm-none d-md-inline-block">Text Size</span><span class="font-smallsize d-none d-sm-none d-md-inline-block" onclick="decFontSize();">A-</span><span class="font-midsize d-none d-sm-none d-md-inline-block" onclick="setOrigFontSize();">A</span><span class="font-bigsize d-none d-sm-none d-md-inline-block" onclick="incFontSize();">A+</span>                  
+              <div class="float-right">
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+
+           <div class="site-logo"
+				id="railLogo">
+				<a href="http://www.indianrailways.gov.in/" target="new"><img
+					alt="" src="img/rlylogo1.png" style="height:60px;width:60px;margin-right:1rem;"></a>
+			</div>
+
+            <div class="col-12">
+              <nav class="site-navigation text-right ml-auto " role="navigation">
+
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                  <li><a href="#home-section" class="nav-link">Home</a></li>
+                  <li><a href="#about-section" class="nav-link">About Us</a></li>
+
+
+                  <li class="has-children">
+                    <a href="" class="nav-link">Booking</a>
+                    <ul class="dropdown arrow-top">
+                    
+                      <li><a href="parcel_process.jsp">Booking procedure</a></li>
+                      <li><a href="login.jsp?buttonlink=parcel" class="nav-link">Online Booking</a></li>
+                     
+
+                      <li><a href="parcel_forms/ForwardingNote.pdf" class="nav-link">Download Forwarding Note</a></li>
+                   
+                	    <li><a href="parcel_prohibited.jsp" class="nav-link">Prohibited Items</a></li>
+                    
+                    </ul>
+                  </li>  
+                      
+                      
+                    <li class="has-children">
+                    <a href="" class="nav-link">Partners</a>
+                    <ul class="dropdown arrow-top">
+                     <!-- <li><a href="/PMSothapps/Login.jsp" class="nav-link">News Paper Manifest</a></li> --> 
+                     	<li><a href="login_fsla.jsp" class="nav-link">News Paper Manifest</a></li>
+                      <li class="has-children">
+                        <a href="#">Lease</a>
+                        <ul class="dropdown">
+                          <li><a href="login_manifest.jsp"> Manifest</a></li>
+                       <!--      <li><a href="/PMSothapps/lease/login.jsp">Manifest</a></li>-->
+                          <!-- <li><a href="/leasereg/reg/webcustapplication.jsp">e-Registration</a></li> -->
+                          <li><a href="login_eregist.jsp">e-Registration</a></li>
+                          <!-- <li><a href="/etender/login.jsp">e-Tender</a></li> -->
+                          <li><a href="login_etender.jsp">e-Tender</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+             <!--      <li><a href="../PMSothapps/mis/login.jsp" class="nav-link">Reports</a></li>
+--> 
+                <li class="has-children">
+                    <a href="" class="nav-link">Pricing</a>
+                    <ul class="dropdown arrow-top">
+   						<li><a href="#calc-section">Calculate Freight</a></li>
+   						 <li><a href="parcel_rates.jsp" class="nav-link">Rates</a>
+                        <!--li class="has-children">
+                        <a href="#">Rates</a>
+                        < ul class="dropdown">
+                          <li><a href="servlet/common_class.parcel_rates_p?scale=R">Rajdhani</a></li>
+                         <li><a href="servlet/common_class.parcel_rates_p?scale=P">Premier</a></li>
+                         <li><a href="servlet/common_class.parcel_rates_p?scale=S">Standard</a></li>
+                         <li><a href="servlet/common_class.parcel_rates_p?scale=L">Luggage</a></li>
+                        </ul> -->
+                      </li>
+                      <li><a href="parcel_rules">Parcel Rules</a></li>
+                       <li><a href="http://www.indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,366,555,862">Policy Circulars</a></li>
+                      <!-- li class="has-children">
+                        <a href="#">Parcel Rules</a>
+                        <ul class="dropdown">
+                          <li><a href="http://www.indianrailways.gov.in/railwayboard/uploads/directorate/traffic_comm/FREIGHT_RATE-2K9/Corrigendum_RC-69-2009.pdf">Wharfage</a></li>
+                         
+                          
+                           <li><a href="business_rules/LTrule2012_001.pdf">Luggage</a></li>
+                         
+                          
+                        </ul>
+                      </li>  -->
+                      <li><a href="parcel_2wheeler.jsp">Two Wheeler Freight</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#faq-section" class="nav-link">FAQ</a></li>
+                  <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <img src="img/Emblem_of_India.png" class="d-sm-none d-none d-md-inline-block"  style="position:absolute;top:0;height:60px;width:60px;right:2;"  />
+              </nav>
+
+            </div>
+
+            <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+        </div>
+
+      </header>
+
+      <div class="ftco-blocks-cover-1">
+        <div class="ftco-cover-1" style="background-image: url('img/Train-2.jpg')">
+          <div class="container">
+          <div class="row align-items-top" style="padding-top:80px;">
+			<div class="col-lg-12 text-danger" align="right">
+                <h1>WELCOME TO INDIAN RAILWAYS PARCEL SERVICES</h1>
+                              <p class="mb-1">Simplifying your Logistics needs with Technology and Innovations..</p>
+                              	      <div class="row">
+	      <div class="col-lg-6 offset-lg-6 col-sm-12">	
+	      
+	      <script>			
+									function validatetrck()
+									{
+
+										//	if(document.onlinestatusForm.txtltpwbno.value==0||document.onlinestatusForm.txtltpwbno.value=='')
+											if((document.getElementById("idltpwbno").value).length<10 || document.getElementById("idltpwbno").value==0||document.getElementById("idltpwbno").value=='')
+											{
+												//alert("Please enter valid PRR no. ");
+												 cuteToast({
+													      type: "success",
+													      message: "Please enter valid PRR no. ",
+													      timer: 5000
+													    });
+												document.getElementById("idltpwbno").focus();
+												return false;
+											}
+										//		if(document.getElementById("txtcaptcha").value=='')
+										//	{
+										//		alert("Please enter capcha code. ");
+												//document.frm_onlinestatus.txtcaptcha.focus();
+										////		document.getElementById("txtcaptcha").focus();
+										//		return false;
+										//	}
+							
+									}
+									</script>
+                	<form name="onlinestatForm" method="post" action="/onlinestatusI.do" onsubmit="return validatetrck();">
+                  <div class="form-group d-flex">
+                    
+                     <input type="text" class="form-control" id="idltpwbno" name="txtltpwbno" placeholder='Enter your 10-digit PRR Number' maxlength=10 onkeypress="Javascript:return	NumericOnly(getkey(event));"/>
+                    
+                    <input type="submit" name="btn_onlinestatus" value="Track Now" class="btn btn-primary text-white px-4" id="Track Now">
+
+                  </div>
+                </form>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END .ftco-cover-1 -->
+        <div class="ftco-service-image-1 pb-5">
+          <div class="container">
+            <div class="owl-carousel owl-all">
+              <div class="service text-center">
+                <a href="login.jsp?buttonlink=parcel"><img src="images/cargo_delivery_small.jpg" alt="Image" class="img-fluid"></a>
+                <div class="px-md-3">
+                  <h3><a href="login.jsp?buttonlink=parcel">Parcel Booking</a></h3>
+                  <p>Facility to get approximate freight and generate forwarding note that is required at booking counter at station</p>
+                </div>
+              </div>
+    <!--           <div class="service text-center">
+                <a href="/leasereg/reg/webcustapplication.jsp"><img src="img/SLR_small.jpg" alt="Image" class="img-fluid"></a>
+                <div class="px-md-3">
+                  <h3><a href="/leasereg/reg/webcustapplication.jsp">Compartment Space Lease </a></h3>
+                  <p>Registration of parties who will participate in e-tendering process of Compartment Space</p>
+                </div>
+              </div>
+              --> 
+              <div class="service text-center">
+                <a href="parcel_process.jsp"><img src="img/booking_process.jpg" alt="Image" class="img-fluid"></a>
+                <div class="px-md-3">
+                  <h3><a href="parcel_process.jsp">Parcel booking procedure</a></h3>
+                  <p>Steps for booking of parcel at parcel office of a station</p>
+                </div>
+              </div>
+              
+              <div class="service text-center">
+                <a href="#calc-section"><img src="img/FrgtCalc.jpg" alt="Image" class="img-fluid"></a>
+                <div class="px-md-3">
+                  <h3><a href="#calc-section">Expected Freight</a></h3>
+                  <p>Get to know about the expected freight</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="site-section bg-light" id="services-section">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-7 text-center">
+              <div class="block-heading-1">
+                <h2>What We Offer</h2>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="owl-carousel owl-all" align="justify">
+
+             <div class="service text-center" onclick="location.href=SLRposition.jsp;">
+                <a href="SLRposition.jsp"><img src="img/ParcelExpress.jpg" alt="Image" class="img-fluid"></a>
+                <div class="px-md-3">
+                  <h3><a href="SLRposition.jsp">PARCEL EXPRESS TRAINS</a></h3>
+                  <p class="desc-text dtls-desc">List of  parcel express trains currently available for transporting parcels</p>
+                </div>
+              </div>
+
+             <div class="service text-center" onclick="showPage('SERVICES');">
+                <a href="parcel_services.jsp"><img src="images/cargo_delivery_small.jpg" alt="Image" class="img-fluid"></a>
+                <div class="px-md-3">
+              <h3 class="mb-3">PARCEL SERVICES</h3>
+              <p>Details of parcel services offered by Indian Railways </p>
+            </div>
+				</div>
+
+             <div class="service text-center" onclick="location.href=innovative_sch.jsp;">
+                <a href="innovative_sch.jsp"><img src="img/innovate2.jpg" alt="Image" class="img-fluid"></a>
+                <div class="px-md-3">
+              <h3 class="mb-3"><a href="innovative_sch.jsp">INNOVATIVE SCHEMES</a></h3>
+              <p>Details of discounts on parcel services offered by Indian Railways </p>
+            </div>
+				</div>
+          </div>
+        </div>
+      </div>
+  <div class="site-section" id="about-section">
+
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-10 text-center">
+              <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
+                <h2>About Us</h2>
+              </div>
+            </div>
+                <p class="text-justify">Parcels consist of small packages which are carried mainly by passenger carrying trains on Indian Railways (IR). We, the Indian Railways, are the backbone of logistics sector of the country.  With our very wide network touching almost every nook and corner of the country, we play a crucial role in facilitating a balanced and inclusive socio economic development of the country. We carry almost all commodities like Fruits and Vegetables,Food grains, Fish, Poultry items, Electrical items,Cycle,Motorcycle,Scooter,Rickshaw, Machinery items, Medicines, House Hold Goods etc. We are the most environment friendly mode of land transportation system. We are committed to offer most competitive rates for transportation and timely delivery of parcels.   </p>
+            
+          </div>
+          
+          
+         <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6 col-md-6 mb-4 col-lg-0 col-lg-3" data-aos="fade-up" data-aos-delay="">
+                  <div class="block-counter-1">
+                    <span class="number"><span data-number="9000">0</span>+</span>
+                    <span class="caption">No. of Trains</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-6 mb-4 col-lg-0 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="block-counter-1">
+                    <span class="number"><span data-number="750">0</span>+</span>
+                    <span class="caption">Station Parcel Offices</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="site-section" id="faq-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="block-heading-1 col-12 text-center">
+              <h2>Frequently Ask Questions</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q1) How can I book parcel through railways?</h3>
+                <p>You can approach the Chief Parcel  Supervisor of the concerned Railway station from where you want to book the parcel </p>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q2) In which trains is parcel booking allowed?</h3>
+                <p>Parcel booking is normally allowed in all passenger trains.<br>Besides there are a number of Parcel Special trains also comprising only of Parcel Vans, whose details are available on the Railways website.</p>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q3) How should I pack my parcels?</h3>
+                <p>All parcels must be securely packed in boxes, trunks, strong baskets or strong gunny, etc., so as to withstand the strain of handling and transferring incidental to their transportation by rail.<br>For certain commodities special packing conditions have been prescribed in the I. R. C. A. Coaching Tariff.
+ 				</p>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q4) What are the parcel charges over railways?</h3>
+                <p>Parcel rates vary with the class of train and are categorised into P-scale, R-scale and S-scale.  The parcel rates table, indication of the weight/ dimensions and distance are given in the I. R. C. A. Coaching Tariff which is available on the Railway website. </p>
+              </div>
+               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q5) How can I keep a track of my parcel?</h3>
+                <p>Railway Receipt (RR) given to the consignor at the time of booking can be quoted to check the status of the consignment.   </p>
+              </div>
+              
+               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q6) How will I know when the parcel has arrived at the destination?</h3>
+                <p>Parcel arrival details can be checked through the running status of the train through which the parcel has been loaded.</p>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q7) Is there any time limit within which the parcel has to be collected?</h3>
+                <p>Yes, there is a time limit specified within which the consignee has to collect parcel so as to avoid paying wharfage charges.</p>
+              </div>
+
+              
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q8) What are the documents needed at the time of booking?</h3>
+                <p>You have to execute a document known as ‘Forwarding Note’ duly furnishing details of the consignments to be booked as well as details of the consignor and consignee. Besides this, an undertaking in the prescribed format shall be furnished stating that e-way bill will be generated and produced before taking delivery. However, if value of the consignment is less than Rs. 50,000/-, an undertaking to this effect shall be given by the consignor.  </p>
+              </div>
+                          </div>
+            <div class="col-lg-6">
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q9) What is the time limit for booking of parcel?</h3>
+                <p>Parcels can be booked upto 4 hours prior to the scheduled departure of the trains from that particular station.</p>
+              </div>
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q10) Will the Railways book my parcel even if there is no direct train to the destination station?</h3>
+                <p>Normally, parcel is booked in direct train to the destination. </p>
+              </div>
+              
+              
+               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q11) What articles are prohibited for carriage as parcel?</h3>
+                <p>Commodities listed in Red Tariff, offensive, contraband, dangerous, explosive, inflammables, etc. are prohibited for carriage as parcel.</p>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q12) What documents are required at the time of taking delivery?</h3>
+                <p>Railway Receipt (RR) given to the consignor at the time of booking of the parcel alongwith e-way bill (if applicable) as specified in SN.9 above, are required before taking delivery at the destination.</p>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q13)Are there any maximum weight and dimensions specified by railway?</h3>
+                <p>The maximum permissible weight and dimensions of any package/article which can be accepted for booking, are as under:</p><br>
+                <table>
+                <tr>
+                <td></td>
+                <td>Maximum Weight</td>
+                <td>Maximum Dimensions</td>
+                </tr>
+                
+                <tr>
+                <td>Broad Gauge</td>
+                <td>150 Kgs</td>
+                <td>2.0 meters X 1.5 meters X 1.25 meters</td>
+                </tr>
+                
+                <tr>
+                <td>Meter Gauge</td>
+                <td>150 Kgs</td>
+                <td>2.0 meters X 1.5 meters X 1.25 meters</td>
+                </tr>
+                <tr>
+                <td>Narrow Gauge</td>
+                <td>125 Kgs</td>
+                <td>1.5 meters X 1.07 meters X 1.00 meters</td>
+                </tr>
+                </table>
+              </div>
+              
+              
+               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q14) Can I book a parcel from any railway station?</h3>
+                <p>As of now, parcel booking/delivery is allowed at around 750 stations over Indian railways.<br>Booking/delivery of parcel from these stations can be done in those passenger trains which have a scheduled stop of at least 05 minutes at that particular station.
+				</p>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q15) Can I book my vehicles (two-wheeler, three-wheeler,four-wheeler) also?</h3>
+                <p>Two-wheelers, tri-wheelers (for people with disabilities) and four-wheelers can also be booked through railway.</p>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q16) Can I book the whole parcel van?</h3>
+                <p>Yes, a Parcel Van can be booked through placing indent at the Parcel office of the concerned station.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="parcel/js/asttn.js"></script>
+<script type="text/javascript">
+
+function showHint(strstn,detail_id,txtcaptcha)
+{ 
+if (strstn.length==0)
+  {
+  document.getElementById(detail_id).value='';
+  return;
+  }
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject('Microsoft.XMLHTTP');
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    { 
+    document.getElementById(detail_id).value=xmlhttp.responseText;
+   }
+  }
+xmlhttp.open('GET','./servlet/common_class.stnhelpAjaxI?strstn='+strstn+"&txtcaptcha="+txtcaptcha,true);
+xmlhttp.send(null);
+}	
+
+
+
+//aSttn=["HWH-HOWRAH","HTE-HATIA","NDLS-NEW DELHI"];
+var sttnstr='';
+for (var i=0; i < aSttn.length;++i){
+     sttnstr+= '<option value="'+aSttn[i]+'" />'; // Helplist for station
+}
+
+var weightstr = '<option value=0> NORMAL CONSIGNMENT</option>';
+weightstr += '<option value=24000> PARCEL VAN - VP(24 Tonne)</option>';
+weightstr += '<option value=23000> PARCEL VAN - VP(23 Tonne)</option>';
+weightstr += '<option value=18000> PARCEL VAN - VP(18 Tonne)</option>';
+weightstr += '<option value=17000> PARCEL VAN - VP(17 Tonne)</option>';
+weightstr += '<option value=16800> PARCEL VAN - VP(16.8 Tonne)</option>';
+	
+	
+$(document).ready(function() {
+
+	var locnfromlist=document.getElementById("fromlist");
+	var locntolist=document.getElementById("tolist");
+	//$('#selLocnFrom').on('change', function () {
+			locnfromlist.innerHTML =sttnstr;
+	//});
+	
+//	$('#txtfromlist').blur( function () {
+		//alert('change..');
+//		if(locnfromlist.value!='' && locntolist.value!=''){
+//			msg	= getDistanceRateAjax(locnfromlist,locntolist);
+//		}
+//	});
+	//$('#selLocnTo').on('change', function () {
+			locntolist.innerHTML =sttnstr;
+			document.getElementById("weightlist").innerHTML =weightstr;
+	//});
+	
+		//	$('#txttolist').blur( function () {
+				//alert('change..');
+		//		if(locnfromlist.value!='' && locntolist.value!=''){
+		//			msg	= getDistanceRateAjax(locnfromlist,locntolist);
+		//		}
+		//	});
+			var	weightstr = '<option value=0> NORMAL CONSIGNMENT</option>';
+			weightstr += '<option value=24000> PARCEL VAN - VP(24 Tonne)</option>';
+			weightstr += '<option value=23000> PARCEL VAN - VP(23 Tonne)</option>';
+			weightstr += '<option value=18000> PARCEL VAN - VP(18 Tonne)</option>';
+			weightstr += '<option value=17000> PARCEL VAN - VP(17 Tonne)</option>';
+			weightstr += '<option value=16800> PARCEL VAN - VP(16.8 Tonne)</option>';
+	
+		document.getElementById("weightlist").innerHTML =weightstr;
+
+});
+
+function getCC(itemtype){
+	var weightstr = '';
+//if(itemtype=='TWOWHEELER'){
+//	weightstr = '<option value="100-60CC"> MOTORCYCLE(60CC or less)</option>';
+//	weightstr += '<option value="200-60CC"> MOTORCYCLE(above 60CC or less than 350CC )</option>';
+//	weightstr += '<option value="250-350CC"> MOTORCYCLE(350CC or above)</option>';
+	
+//}else{
+	weightstr = '<option value=0> NORMAL CONSIGNMENT</option>';
+	weightstr += '<option value=24000> PARCEL VAN - VP(24 Tonne)</option>';
+	weightstr += '<option value=23000> PARCEL VAN - VP(23 Tonne)</option>';
+	weightstr += '<option value=18000> PARCEL VAN - VP(18 Tonne)</option>';
+	weightstr += '<option value=17000> PARCEL VAN - VP(17 Tonne)</option>';
+	weightstr += '<option value=16800> PARCEL VAN - VP(16.8 Tonne)</option>';
+//}
+document.getElementById("weightlist").innerHTML =weightstr;
+}
+
+function getDistanceRateAjax(){
+	//,,weightObj,distObj){
+frmstnObj=document.getElementById('txtfromlist');
+tostnObj=document.getElementById('txttolist');
+weightObj=document.getElementById('txtweight');
+distObj=document.getElementById('txtdist');
+
+if((weightObj.value).indexOf('-')==-1)
+	weight	=	parseInt(weightObj.value);
+else
+	weight	=	parseInt((weightObj.value).split('-')[0])*1.5;
+wght=weight;
+	retMsg= true;
+//	String uri = "https://www.parcel.indianrail.gov.in/CRISPMSRestfulServices/services/PMSStatus/DistncRateDFCFreightCalculatorRest/";
+/*Returnd json
+ * {
+	    "DIST": "1471",
+	    "RATEP": "39.028",
+	    "RATER": "58.543",
+	    "RATES": "19.515",
+	    "RATEM": "0.0",
+	    "RATEL": "70.25"
+	}
+ */
+	if(frmstnObj.value=='' || tostnObj.value=='' || weightObj.value =='' || weightObj.value=='0')
+	{
+		alert('Please fill From Stn./To Stn/Weight');
+		return;
+	}
+ var senddetails={
+		 StrSOURCE_STATION:(frmstnObj.value).split("-")[0],
+		 StrDESTINATION_STATION:(tostnObj.value).split("-")[0],
+		 weight:wght,
+		 scaleType:'R'
+ }
+	var sendinfo={
+			
+			detail:JSON.stringify(senddetails) //"{'StrSOURCE_STATION':'"+(frmstnObj.value).split("-")[0]+"','StrDESTINATION_STATION':'"+(tostnObj.value).split("-")[0]+"','weight':'"+weightObj.value+"','scaleType':'R'}"
+			
+	};
+	$.ajax({
+	    url: "/CRISPMSRestfulServices/services/PMSStatus/DistncRateDFCFreightCalculatorRest/" , 
+	type : "POST",
+	
+	contentType: "application/json; charset=utf-8",
+    traditional: true,
+	dataType : 'json',
+
+	data : JSON.stringify(sendinfo),
+	success : function(response) {
+	//alert(response.state);
+	//distObj.value=response.DIST;
+
+	strtab	=	"<table class='table table-striped table-bordered tabformat'>";
+	strtab	+=	"<tr>";
+	strtab	+=	"<th> From";
+	strtab	+=	"</th>";
+	strtab	+=	"<th> To";
+	strtab	+=	"</th>";
+	strtab	+=	"<th> Chargeable Weight(Kgs)";
+	strtab	+=	"</th>";
+	strtab	+=	"<th> Distance(km)";
+	strtab	+=	"</th>";
+	strtab	+=	"</tr>";
+	strtab	+=	"<tr>";
+	strtab	+=	"<td> "+(frmstnObj.value).split("-")[0];
+	strtab	+=	"</td>";
+	strtab	+=	"<td>"+(tostnObj.value).split("-")[0];
+	strtab	+=	"</td>";
+	strtab	+=	"<td>"+weight;
+	strtab	+=	"</td>";
+	strtab	+=	"<td> "+response.DIST;;
+	strtab	+=	"</td>";
+	strtab	+=	"</tr>";
+	strtab	+=	"</table>"
+	strtab	+=	"<table class='table table-striped table-bordered tabformat'>";
+
+	strtab	+=	"<tr>";	
+	strtab	+=	"<th> Scale";
+	strtab	+=	"</th>";
+	strtab	+=	"<th> Rate(Rs/10 kg)";
+	strtab	+=	"</th>";
+	strtab	+=	"<th> Freight(Rs)";
+	strtab	+=	"</th>";
+	strtab	+=	"<th> GST(5%)(Rs)";
+	strtab	+=	"</th>";
+	strtab	+=	"<th> Net Freight(Rs)";
+	strtab	+=	"</th>";
+	strtab	+=	"</tr>";
+	strtab	+=	"<tr>";	
+	strtab	+=	"<td> Rajdhani";
+	strtab	+=	"</td>";
+	strtab	+=	"<td>"+response.RATER;
+	strtab	+=	"</td>";
+	var f = parseFloat(response.RATER)*Math.ceil(weight/10);
+	if(f<=30) f=30;
+	strtab	+=	"<td> "+ f.toFixed(2);
+	strtab	+=	"</td>";
+	strtab	+=	"<td> "+ (.05*f).toFixed(2);
+	strtab	+=	"</td>";
+	strtab	+=	"<td> "+ Math.ceil(f+.05*f);
+	strtab	+=	"</td>";
+	strtab	+=	"</tr>";
+	strtab	+=	"<tr>";	
+	strtab	+=	"<td> Premier";
+	strtab	+=	"</td>";
+	strtab	+=	"<td>"+response.RATEP;;
+	strtab	+=	"</td>";
+	var f = parseFloat(response.RATEP)*Math.ceil(weight/10);
+	if(f<=30) f=30;
+	strtab	+=	"<td> "+ f.toFixed(2);
+	strtab	+=	"</td>";
+	strtab	+=	"<td> "+ (.05*f).toFixed(2);
+	strtab	+=	"</td>";
+	strtab	+=	"<td> "+ Math.ceil(f+.05*f);
+	strtab	+=	"</td>";
+
+	strtab	+=	"</tr>";
+	strtab	+=	"<tr>";	
+	strtab	+=	"<td> Standard";
+	strtab	+=	"</td>";
+	strtab	+=	"<td>"+response.RATES;;
+	strtab	+=	"</td>";
+	var f = parseFloat(response.RATES)*Math.ceil(weight/10);
+	if(f<=30) f=30;
+	strtab	+=	"<td> "+ f.toFixed(2);
+	strtab	+=	"</td>";
+	strtab	+=	"<td> "+ (.05*f).toFixed(2);
+	strtab	+=	"</td>";
+	strtab	+=	"<td> "+ Math.ceil(f+.05*f);
+	strtab	+=	"</td>";
+
+	strtab	+=	"</tr>";
+	
+	strtab	+=	"<tr>";	
+	strtab	+=	"<td> Luggage";
+	strtab	+=	"</td>";
+	strtab	+=	"<td>"+response.RATEL;;
+	strtab	+=	"</td>";
+	var f = parseFloat(response.RATEL)*Math.ceil(weight/10);
+	if(f<=30) f=30;
+	strtab	+=	"<td> "+ f.toFixed(2);
+	strtab	+=	"</td>";
+	strtab	+=	"<td> "+ (.05*f).toFixed(2);
+	strtab	+=	"</td>";
+	strtab	+=	"<td> "+ Math.ceil(f+.05*f);
+	strtab	+=	"</td>";
+
+	strtab	+=	"</tr>";
+	strtab	+=	"</table>"
+		$("#frghtcalc").html(strtab);
+	},
+		
+	  error: function(jqXHR, exception){
+	  	alert(exception);
+	  }
+	});
+		//return retMsg;
+	}
+</script>
+    <div class="site-section bg-light" id="calc-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
+            <div class="block-heading-1">
+              <span>Calculate Approximate Freight</span>
+              <h2>Calculator</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="100">
+            <form action="#" method="post">
+            
+                <div class="form-group row">
+
+                <div class="col-md-6 mb-4 mb-lg-0">
+                  <select class="form-control"  id="cmbitemtype" onchange="Javascript:return	getCC(this.value);">
+                <!-- option value='TWOWHEELER'>Two Wheeler</option-->
+                 <option value='GENERAL'>General goods</option>
+                </select>
+                </div>
+
+              </div>
+              <div class="form-group row">
+
+                <div class="col-md-6 mb-4 mb-lg-0">
+                  <input type="text"  list="fromlist" class="form-control" placeholder="From Station" id="txtfromlist" onkeypress="Javascript:return	CharsOnly(getkey(event));">
+                <datalist id="fromlist"></datalist>
+                </div>
+                <div class="col-md-6">
+                  <input type="text"  list="tolist" class="form-control" placeholder="To Station" id="txttolist" onkeypress="Javascript:return	CharsOnly(getkey(event));">
+                 <datalist id="tolist"></datalist>
+                </div>
+
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text"  list="weightlist" class="form-control"  id="txtweight" placeholder="Weight in kgs"  onkeypress="Javascript:return	NumericOnly(getkey(event));">
+                <datalist id="weightlist"></datalist>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6 mr-auto">
+                  <input type="button" class="btn btn-block btn-primary text-white py-3 px-5" value="Submit" onclick="Javascript:getDistanceRateAjax()">
+                </div>
+              </div>
+            </form>
+          </div>
+             <div  id="frghtcalc"></div>
+  </div>
+    </div>
+      </div>
+
+    <div class="site-section bg-light" id="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
+            <div class="block-heading-1">
+              <span>Get In Touch</span>
+              <h2>Contact Us</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-white p-3 p-md-5">
+              <h3 class="text-black mb-4">Contact Info</h3>
+            </div>
+                      <div class=" text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+          	<div  class="d-block mb-3"><span class="d-block text-black">Address:
+                  
+                 RAILWAY BOARD,New Delhi -110001 </span></div>
+                <div  class="d-block mb-3"><span class="d-block text-black">Phone: 139</span></div>
+                	  <div  class="d-block mb-3" >
+	  <a href="contactus2.jsp" target="new">COVID-19 special Train Helpline</a>
+	  </div>
+                <div class="d-block mb-3"><span class="d-block text-black">Email: <a href='http://claims.indianrail.gov.in/not-recvd-cell-contacts.htm'  target="new">NR Cell</a>
+                </span></div>
+                <div class="d-block mb-3"><span class="d-block text-black">Complaint web-site:  <a href='https://railmadad.indianrailways.gov.in/madad/final/foishome.jsp'  target="new">Rail Madad</a></span></div>
+
+        </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+
+<div class="row" align="center">
+	<div class="col col-lg-1 col-sm-4">
+	</div>
+	<div class="col col-lg-2 col-sm-4" align="center">
+		<img src="img/rlylogo1.png" class="govwebicon" style="height:60px;width:60px;margin-right:1rem;" onclick="openExtnLink('INDIAN RAILWAYS','http://indianrailways.gov.in/','img/rlylogo1.png');" />
+	</div>
+	<div class="col col-lg-2 col-sm-4" align="center">
+		<img src="img/datagovlogo1.jpg" class="govwebicon" onclick="openExtnLink('DATA GOV','https://data.gov.in/','img/datagovlogo1.jpg');" />
+	</div>
+	<div class="col col-lg-2 col-sm-4" align="center">
+		<img src="img/digitalindialogo1.png" class="govwebicon" onclick="openExtnLink('DIGITAL INDIA','https://www.digitalindia.gov.in/','img/digitalindialogo1.png');" />
+	</div>
+	<div class="col col-lg-2 col-sm-4" align="center">
+		<img src="img/indiagovlogo1.png" class="govwebicon" onclick="openExtnLink('INDIA GOV','https://www.india.gov.in/','img/indiagovlogo1.png');" />
+	</div>
+	<div class="col col-lg-2 col-sm-4" align="center">
+		<img src="img/mygovlogo1.jpg" class="govwebicon" onclick="openExtnLink('MY GOV','https://www.mygov.in/','img/mygovlogo1.jpg');" />
+	</div>
+
+</div>
+
+<div id="Modal_PrivacyPolicy" class="modal">
+<IFRAME src="policy.jsp" name="d" id="d" height="50%" width="50%"
+	style="position:absolute;z-index:1;display:none;margin: 18% 0 0 17%;"></IFRAME>	</div>
+<div id="Modal_Disclaimer" class="modal">
+<IFRAME src="disclaimer.jsp" name="a" id="a" height="50%" width="50%"
+	style="position:absolute;z-index:1;display:none;margin: 18% 0 0 17%;"></IFRAME>
+</div>
+<div id="Modal_Copyright" class="modal">
+<IFRAME src="Copyright.jsp" name="e" id="e" height="50%" width="50%"
+	style="position:absolute;z-index:1;display:none;margin: 18% 0 0 17%;"></IFRAME>
+</div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+  <div class="col col-lg-2 col-sm-4" align="center">
+   <a href="javascript:void(0)" onclick="openExtnLink('YOU TUBE','https://www.youtube.com/user/RailMinIndia','img/yt_1200.png');"><i class="fab fa-youtube fa-2x" style="margin-top:10px;"></i>&nbsp;Follow Us on <img src="img/yt_1200.png" /></a>
+	</div>
+	<div class="col col-lg-2 col-sm-4" align="center">
+	  <a href="javascript:showDisclaimer()">Disclaimer</a>
+	  </div>
+	  <div class="col col-lg-2 col-sm-4" align="center">
+	  <a href="javascript:showPrivacyPolicy()">Privacy Policy  </a>
+	  </div>
+	  <div class="col col-lg-2 col-sm-4" align="center">
+	  <a href="javascript:showCopyright()" >Copyright Policy</a>
+	  </div>
+	  <div class="col col-lg-2 col-sm-4" align="center">
+	  <a href="contactus2.jsp" target="new">COVID-19 special Train Helpline</a>
+	  </div>
+	  <div class="col col-lg-2 col-sm-4" align="center">
+	  <a href="sitemap.jsp" target="new">Sitemap</a>
+	 </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+		  <div class="col-md-12">
+		    <div class="border-top pt-5">
+		      <p class="copyright">
+		    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Portal has been designed and developed by CRIS
+		    </p>
+		    </div>
+		  </div>
+
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+ 
+
+  </body>
+
+</html>
