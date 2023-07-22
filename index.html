@@ -9,7 +9,7 @@
   
 <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" />
 <head>
-    <title>Railway Commodity Reservation System.</title>
+    <title>Railway Reservation System.</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -169,7 +169,7 @@
                 <li class="has-children">
                     <a href="#" class="nav-link">Pricing</a>
                     <ul class="dropdown arrow-top">
-   						<li><a>Calculate Freight</a></li>
+   						<li><a>Calculate Fare</a></li>
    						 <li><a>Rates</a>
                         <!--li class="has-children">
                         <a href="#">Rates</a>
@@ -180,7 +180,7 @@
                          <li><a href="servlet/common_class.parcel_rates_p?scale=L">Luggage</a></li>
                         </ul> -->
                       </li>
-                      <li><a>Parcel Rules</a></li>
+                      <li><a>Ticket Rules</a></li>
                        <li><a>Policy Circulars</a></li>
                       <!-- li class="has-children">
                         <a href="#">Parcel Rules</a>
@@ -193,7 +193,7 @@
                           
                         </ul>
                       </li>  -->
-                      <li><a>Two Wheeler Freight</a></li>
+                      <li><a>Two-Tier AC Fare</a></li>
                     </ul>
                   </li>
                   <li><a>FAQ</a></li>
@@ -217,8 +217,8 @@
           <div class="container">
           <div class="row align-items-top" style="padding-top:80px;">
 			<div class="col-lg-12 text-danger" align="right">
-                <h1>WELCOME TO HARICHARAN'S RAILWAY RESERVATION SYSTEM</h1>
-                              <p class="mb-1">Simplifying your Logistics needs with Technology and Innovations..</p>
+                <h1>WELCOME TO ROHIT'S RAILWAY RESERVATION SYSTEM</h1>
+                              <p class="mb-1">Simplifying your Travel needs with Technology and Innovations..</p>
                               	      <div class="row">
 	      <div class="col-lg-6 offset-lg-6 col-sm-12">	
 	      
@@ -232,7 +232,7 @@
 												//alert("Please enter valid PRR no. ");
 												 cuteToast({
 													      type: "success",
-													      message: "Please enter valid PRR no. ",
+													      message: "Please enter valid PNR no. ",
 													      timer: 5000
 													    });
 												document.getElementById("idltpwbno").focus();
@@ -285,16 +285,16 @@
               <div class="service text-center">
                 <img src="img/booking_process.jpg" alt="Image" class="img-fluid"></a>
                 <div class="px-md-3">
-                  <h3>Parcel booking procedure</a></h3>
-                  <p>Steps for booking of parcel at parcel office of a station</p>
+                  <h3>Ticket booking procedure</a></h3>
+                  <p>Steps for booking of Ticket at Ticket office of a station</p>
                 </div>
               </div>
               
               <div class="service text-center">
                 <img src="img/FrgtCalc.jpg" alt="Image" class="img-fluid"></a>
                 <div class="px-md-3">
-                  <h3><a href="#calc-section">Expected Freight</a></h3>
-                  <p>Get to know about the expected freight</p>
+                  <h3><a href="#calc-section">Expected Fare</a></h3>
+                  <p>Get to know about the expected Fare</p>
                 </div>
               </div>
             </div>
@@ -318,8 +318,8 @@
              <div class="service text-center">
                 <img src="img/ParcelExpress.jpg" alt="Image" class="img-fluid"></a>
                 <div class="px-md-3">
-                  <h3><a href="SLRposition.html">PARCEL EXPRESS TRAINS</a></h3>
-                  <p class="desc-text dtls-desc">List of  parcel express trains currently available for transporting parcels</p>
+                  <h3><a href="SLRposition.html">EXPRESS TRAINS</a></h3>
+                  <p class="desc-text dtls-desc">List of passenger express trains currently available for booking</p>
                 </div>
               </div>
 
@@ -335,7 +335,7 @@
               <img src="img/innovate2.jpg" alt="Image" class="img-fluid"></a>
                 <div class="px-md-3">
               <h3 class="mb-3"><a href="innovative_sch.html">INNOVATIVE SCHEMES</a></h3>
-              <p>Details of discounts on parcel services offered by Indian Railways </p>
+              <p>Details of discounts on ticket boking services offered by Indian Railways </p>
             </div>
 				</div>
           </div>
@@ -350,7 +350,8 @@
                 <h2>About Us</h2>
               </div>
             </div>
-                <p class="text-justify">Parcels consist of small packages which are carried mainly by passenger carrying trains on Railways. We are the backbone of logistics sector of the country.  With our very wide network touching almost every nook and corner of the country, we play a crucial role in facilitating a balanced and inclusive socio economic development of the country. We carry almost all commodities like Fruits and Vegetables,Food grains, Fish, Poultry items, Electrical items,Cycle,Motorcycle,Scooter,Rickshaw, Machinery items, Medicines, House Hold Goods etc. We are the most environment friendly mode of land transportation system. We are committed to offer most competitive rates for transportation and timely delivery of parcels.   </p>
+                <p class="text-justify">Welcome to our passenger ticket booking services, where we play a crucial role in the country's logistics sector. With an extensive network covering every nook and corner, we support balanced socio-economic development. We offer efficient transportation for a wide range of commodities, ensuring timely delivery and competitive rates. Travel with us to experience a seamless journey and contribute to our eco-friendly land transportation system.
+                  We take pride in offering competitive rates for transportation while ensuring timely and reliable delivery of parcels. Our dedication to passenger comfort and convenience is at the heart of our services. Choose us for your travel needs and experience a seamless journey with us.   </p>
             
           </div>
           
@@ -367,7 +368,7 @@
                 <div class="col-6 col-md-6 mb-4 col-lg-0 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                   <div class="block-counter-1">
                     <span class="number"><span data-number="750">0</span>+</span>
-                    <span class="caption">Station Parcel Offices</span>
+                    <span class="caption">Station Booking Offices</span>
                   </div>
                 </div>
 
@@ -388,112 +389,74 @@
             <div class="col-lg-6">
 
               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q1) How can I book parcel through railways?</h3>
-                <p>You can approach the Chief Parcel  Supervisor of the concerned Railway station from where you want to book the parcel </p>
-              </div>
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q1) How can I book a train ticket?</h3>
+                <p>You can book a train ticket through various methods such as:</p>
+                <ul>
+                    <li>Online: Visit the official railway website or mobile app and follow the booking process.</li>
+                    <li>At Railway Stations: Visit the ticket counter at any railway station to book your ticket.</li>
+                    <li>Authorized Agents: You can also book through authorized travel agents.</li>
+                </ul>
+            </div>
 
-              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q2) In which trains is parcel booking allowed?</h3>
-                <p>Parcel booking is normally allowed in all passenger trains.<br>Besides there are a number of Parcel Special trains also comprising only of Parcel Vans, whose details are available on the Railways website.</p>
-              </div>
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q2) Can I book a ticket for any train through online portals?</h3>
+                <p>Yes, you can book tickets for most trains through the official railway website or other authorized online portals.</p>
+            </div>
 
-              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q3) How should I pack my parcels?</h3>
-                <p>All parcels must be securely packed in boxes, trunks, strong baskets or strong gunny, etc., so as to withstand the strain of handling and transferring incidental to their transportation by rail.<br>For certain commodities special packing conditions have been prescribed in the I. R. C. A. Coaching Tariff.
- 				</p>
-              </div>
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q3) Is there a limit to the number of tickets I can book at once?</h3>
+                <p>Yes, there is a limit on the number of tickets that can be booked per user in a single transaction. This limit may vary depending on the type of ticket and the railway's policy.</p>
+            </div>
 
-              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q4) What are the parcel charges over railways?</h3>
-                <p>Parcel rates vary with the class of train and are categorised into P-scale, R-scale and S-scale.  The parcel rates table, indication of the weight/ dimensions and distance are given in the I. R. C. A. Coaching Tariff which is available on the Railway website. </p>
-              </div>
-               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q5) How can I keep a track of my parcel?</h3>
-                <p>Railway Receipt (RR) given to the consignor at the time of booking can be quoted to check the status of the consignment.   </p>
-              </div>
-              
-               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q6) How will I know when the parcel has arrived at the destination?</h3>
-                <p>Parcel arrival details can be checked through the running status of the train through which the parcel has been loaded.</p>
-              </div>
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q4) How can I make a payment for my ticket booking?</h3>
+                <p>You can make payments through various methods, including:</p>
+                <ul>
+                    <li>Online Payment: Credit/debit cards, net banking, mobile wallets, etc.</li>
+                    <li>Cash Payment: At the ticket counter in railway stations or authorized agents' offices.</li>
+                </ul>
+            </div>
 
-              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q7) Is there any time limit within which the parcel has to be collected?</h3>
-                <p>Yes, there is a time limit specified within which the consignee has to collect parcel so as to avoid paying wharfage charges.</p>
-              </div>
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q5) Can I cancel or modify my ticket after booking?</h3>
+                <p>Yes, you can cancel or modify your ticket subject to the cancellation and refund policy of the railway. Cancellation charges may apply.</p>
+            </div>
 
-              
-              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q8) What are the documents needed at the time of booking?</h3>
-                <p>You have to execute a document known as ‘Forwarding Note’ duly furnishing details of the consignments to be booked as well as details of the consignor and consignee. Besides this, an undertaking in the prescribed format shall be furnished stating that e-way bill will be generated and produced before taking delivery. However, if value of the consignment is less than Rs. 50,000/-, an undertaking to this effect shall be given by the consignor.  </p>
-              </div>
-                          </div>
-            <div class="col-lg-6">
-              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q9) What is the time limit for booking of parcel?</h3>
-                <p>Parcels can be booked upto 4 hours prior to the scheduled departure of the trains from that particular station.</p>
-              </div>
-              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q10) Will the Railways book my parcel even if there is no direct train to the destination station?</h3>
-                <p>Normally, parcel is booked in direct train to the destination. </p>
-              </div>
-              
-              
-               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q11) What articles are prohibited for carriage as parcel?</h3>
-                <p>Commodities listed in Red Tariff, offensive, contraband, dangerous, explosive, inflammables, etc. are prohibited for carriage as parcel.</p>
-              </div>
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q6) How can I check my ticket status?</h3>
+                <p>You can check your ticket status by using the PNR (Passenger Name Record) number on the official website or mobile app.</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
 
-              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q12) What documents are required at the time of taking delivery?</h3>
-                <p>Railway Receipt (RR) given to the consignor at the time of booking of the parcel alongwith e-way bill (if applicable) as specified in SN.9 above, are required before taking delivery at the destination.</p>
-              </div>
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q7) Are there discounts available for specific categories like senior citizens or children?</h3>
+                <p>Yes, Indian Railways offers concessions and discounts for certain categories like senior citizens, children, students, and more. You may need to provide valid identification for availing these discounts.</p>
+            </div>
 
-              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q13)Are there any maximum weight and dimensions specified by railway?</h3>
-                <p>The maximum permissible weight and dimensions of any package/article which can be accepted for booking, are as under:</p><br>
-                <table>
-                <tr>
-                <td></td>
-                <td>Maximum Weight</td>
-                <td>Maximum Dimensions</td>
-                </tr>
-                
-                <tr>
-                <td>Broad Gauge</td>
-                <td>150 Kgs</td>
-                <td>2.0 meters X 1.5 meters X 1.25 meters</td>
-                </tr>
-                
-                <tr>
-                <td>Meter Gauge</td>
-                <td>150 Kgs</td>
-                <td>2.0 meters X 1.5 meters X 1.25 meters</td>
-                </tr>
-                <tr>
-                <td>Narrow Gauge</td>
-                <td>125 Kgs</td>
-                <td>1.5 meters X 1.07 meters X 1.00 meters</td>
-                </tr>
-                </table>
-              </div>
-              
-              
-               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q14) Can I book a parcel from any railway station?</h3>
-                <p>As of now, parcel booking/delivery is allowed at around 750 stations over Indian railways.<br>Booking/delivery of parcel from these stations can be done in those passenger trains which have a scheduled stop of at least 05 minutes at that particular station.
-				</p>
-              </div>
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q8) Can I book a ticket for a future date in advance?</h3>
+                <p>Yes, advance reservation is available for most trains. You can book tickets up to a certain number of days in advance, as per the railway's policy.</p>
+            </div>
 
-              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q15) Can I book my vehicles (two-wheeler, three-wheeler,four-wheeler) also?</h3>
-                <p>Two-wheelers, tri-wheelers (for people with disabilities) and four-wheelers can also be booked through railway.</p>
-              </div>
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q9) What are the different ticket classes available for booking?</h3>
+                <p>Indian Railways offers various classes such as AC First Class, AC Two Tier, AC Three Tier, Sleeper Class, and General Class. The availability of classes depends on the train and its route.</p>
+            </div>
 
-              <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q16) Can I book the whole parcel van?</h3>
-                <p>Yes, a Parcel Van can be booked through placing indent at the Parcel office of the concerned station.</p>
-              </div>
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q10) Can I book tickets for multiple passengers in a single transaction?</h3>
+                <p>Yes, you can book tickets for multiple passengers in a single transaction, depending on the number of available seats in the desired class.</p>
+            </div>
+
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q11) Are there any concessions available for group bookings?</h3>
+                <p>Yes, Indian Railways offers group booking concessions for certain categories of passengers. You can inquire about the details at the nearest railway station or authorized agents.</p>
+            </div>
+
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-black h4 mb-4"><span class="icon-question_answer text-primary mr-2"></span>Q12) Can I get a refund for a canceled ticket?</h3>
+                <p>Yes, you can get a refund for a canceled ticket after deducting applicable cancellation charges. The refund amount and cancellation charges depend on the time of cancellation and other factors.</p>
             </div>
           </div>
         </div>
@@ -763,7 +726,7 @@ wght=weight;
         <div class="row">
           <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
             <div class="block-heading-1">
-              <span>Calculate Approximate Freight</span>
+              <span>Calculate Approximate Fare</span>
               <h2>Calculator</h2>
             </div>
           </div>
@@ -777,7 +740,7 @@ wght=weight;
                 <div class="col-md-6 mb-4 mb-lg-0">
                   <select class="form-control"  id="cmbitemtype">
                 <!-- option value='TWOWHEELER'>Two Wheeler</option-->
-                 <option value='GENERAL'>General goods</option>
+                 <option value='GENERAL'>General Ticket</option>
                 </select>
                 </div>
 
@@ -832,12 +795,13 @@ wght=weight;
                       <div class=" text-center mb-5" data-aos="fade-up" data-aos-delay="200">
           	<div  class="d-block mb-3"><span class="d-block text-black">Address:
                   
-              Techno India, TECHNO INDIA : EM-4/1, Sector V, Bidhannagar, Kolkata, West Bengal 700091 </span></div>
-                <div  class="d-block mb-3"><span class="d-block text-black">Phone: 098365 44419</span></div>
+              Govt. College Of Engineering & Ceramic Technology
+              73, Abinash Chandra Banerjee Lane Kolkata-700 010 </span></div>
+                <div  class="d-block mb-3"><span class="d-block text-black">Phone: 090730 60115</span></div>
                 	  <div  class="d-block mb-3" >
 	  <a target="new">COVID-19 special Train Helpline</a>
 	  </div>
-                <div class="d-block mb-3"><span class="d-block text-black">Email: <a >13000120123_Hari@gmail.com</a>
+                <div class="d-block mb-3"><span class="d-block text-black">Email: <a >rohit-ghosh-br-20@gcect.ac.in</a>
                 </span></div>
                 <div class="d-block mb-3"><span class="d-block text-black">Complaint web-site:  <a>Rail Madad</a></span></div>
 
